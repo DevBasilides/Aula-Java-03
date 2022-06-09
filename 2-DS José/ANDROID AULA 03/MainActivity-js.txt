@@ -1,0 +1,37 @@
+MainActicity.java 
+
+package com.example.delis;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+
+public class MainActivity extends AppCompatActivity {
+    
+    private View edit1;
+    private View edit2;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        edit1 = findViewById(R.id.num1);
+        edit2 = findViewById(R.id.num2);
+        result = findViewById(R.Id.textView);
+    }
+    
+    EditText edit1, edit2,
+    TextView result;
+    int n1;
+    int n2;
+    
+    public void Calcula(View view){
+        n1 = Integer.parseInt(edit1.getText().toString());
+        n2 = Integer.parseInt(edit2.getText().toString());
+
+        int resultado = n1+n2;
+
+        result.setText(Integer.value0(resultado));
+    }
+}

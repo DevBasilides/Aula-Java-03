@@ -1,0 +1,4 @@
+get text = pegar valor
+
+
+nome da edit text.setText(n1.ToString);
